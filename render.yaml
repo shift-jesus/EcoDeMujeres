@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: eco-de-mujeres
+    runtime: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && node server.js
+    plan: free
+    disk:
+      name: data
+      mountPath: /app/backend/database
+      sizeGB: 1
