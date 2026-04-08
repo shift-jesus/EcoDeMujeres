@@ -3,7 +3,7 @@ services:
     name: eco-de-mujeres
     runtime: node
     buildCommand: cd backend && npm install
-    startCommand: cd backend && node server.js
+    startCommand: node backend/server.js
     plan: free
     disk:
       name: data
