@@ -1,0 +1,121 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap');
+
+:root {
+  /* NUEVA PALETA: Naranja, blanco, negro */
+  --gold:       #F97316;      /* naranja principal */
+  --gold-light: #FFEDD5;      /* naranja muy claro */
+  --deep:       #000000;      /* negro */
+  --terra:      #EA580C;      /* naranja oscuro */
+  --cream:      #FFFFFF;      /* blanco */
+  --cream-dark: #F5F5F5;      /* gris muy claro */
+  --text:       #1F1F1F;      /* negro suave */
+  --muted:      #6B6B6B;      /* gris medio */
+  --white:      #FFFFFF;      /* blanco puro */
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans:  'DM Sans', system-ui, sans-serif;
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+
+  --transition: 0.2s ease;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Utilidades globales */
+.serif       { font-family: var(--font-serif); }
+.gold        { color: var(--gold); }
+.muted       { color: var(--muted); }
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 400;
+}
+.divider {
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+  margin: 0.75rem 0;
+}
+
+/* Botón primario */
+.btn-primary {
+  display: inline-block;
+  padding: 13px 34px;
+  background: var(--gold);
+  color: var(--deep);
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  border: none;
+  transition: background var(--transition), transform var(--transition);
+}
+.btn-primary:hover {
+  background: var(--terra);
+  transform: translateY(-1px);
+}
+
+/* Botón outline */
+.btn-outline {
+  display: inline-block;
+  padding: 11px 28px;
+  background: transparent;
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--gold);
+  transition: background var(--transition), color var(--transition);
+}
+.btn-outline:hover {
+  background: var(--gold);
+  color: var(--deep);
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}

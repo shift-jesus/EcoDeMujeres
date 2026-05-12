@@ -1,0 +1,79 @@
+# Dependencias
+/node_modules
+
+# Archivos de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos de base de datos de SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# Carpeta de subidas del backend
+backend/uploads/
+
+# Archivos de compilación y empaquetado
+/build
+/dist
+/.cache
+
+# Logs y archivos temporales
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+tmp/
+
+# Archivos de configuración de IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+# Archivos multimedia (audios, imágenes, videos) - evitar grandes archivos
+*.mp3
+*.mp4
+*.m4a
+*.aac
+*.webm
+*.wav
+*.flac
+*.ogg
+
+# Imágenes pesadas (opcional, si tienes muchas)
+*.psd
+*.tif
+*.bmp
+
+# Archivos PDF grandes (subidos al backend)
+*.pdf
+
+# Archivos comprimidos
+*.zip
+*.tar.gz
+*.7z
+*.rar
+*.iso
+
+# Archivos de respaldo de base de datos
+*.bak
+*.backup
+*.dump
+
+# Archivos temporales del sistema
+*.tmp
+*.temp
+*~
+
+# Carpetas de logs adicionales
+logs/
+*.pid

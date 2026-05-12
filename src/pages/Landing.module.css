@@ -1,0 +1,331 @@
+/* src/pages/Landing.module.css */
+
+/* ========== HERO SECTION ========== */
+.heroContainer {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.heroCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: clamp(2.6rem, 6vw, 4.8rem);
+  color: #F5EDE0;
+  line-height: 1.1;
+  margin: 1.2rem 0;
+  font-weight: 400;
+  text-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.heroTitle em {
+  color: var(--gold);
+  font-style: italic;
+}
+
+.heroSub {
+  font-size: 15px;
+  color: rgba(245, 237, 224, 0.7);
+  max-width: 400px;
+  margin: 0 auto 2rem auto;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.dot {
+  width: 28px;
+  height: 2px;
+  background: rgba(245, 237, 224, 0.2);
+  border-radius: 1px;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  transition: background 0.3s, width 0.3s;
+}
+
+.dotActive {
+  background: var(--gold);
+  width: 42px;
+}
+
+.quote {
+  margin-top: 2rem;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 2px solid rgba(201, 151, 90, 0.35);
+  padding-left: 1.2rem;
+  text-align: left;
+  min-height: 80px;
+}
+
+.quote p {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 15px;
+  color: rgba(245, 237, 224, 0.8);
+  line-height: 1.65;
+}
+
+.quote cite {
+  display: block;
+  font-size: 11px;
+  font-family: var(--font-sans);
+  color: var(--gold);
+  margin-top: 8px;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* ========== STATISTICS SECTION ========== */
+.statsSection {
+  padding: 5rem 2.5rem;
+  background: var(--cream);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  margin-bottom: 2.5rem;
+}
+
+.sectionTitle {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  color: var(--deep);
+  font-weight: 400;
+  margin-top: 0.3rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--muted);
+  margin-top: -0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Sliders grid (dos filas) */
+.slidersGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Slider individual */
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.sliderWrapper {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  background: white;
+}
+
+.sliderTrack {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.sliderSlide {
+  min-width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Botones del slider */
+.sliderBtnPrev, .sliderBtnNext {
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliderBtnPrev:hover, .sliderBtnNext:hover {
+  background: var(--gold);
+  color: white;
+}
+
+/* Puntos de navegación */
+.sliderDots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.sliderDots .dot {
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sliderDots .activeDot {
+  background: var(--gold);
+  width: 24px;
+  border-radius: 4px;
+}
+
+/* Tarjeta de estadísticas */
+.statCard {
+  background: white;
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  height: 100%;
+}
+
+.statTitle {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-left: 4px solid var(--gold);
+  padding-left: 0.75rem;
+  color: var(--deep);
+}
+
+.statBars {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.statBarItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.barContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: #f0f0f0;
+  border-radius: 20px;
+  height: 32px;
+  overflow: hidden;
+  position: relative;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 20px;
+  transition: width 0.3s;
+}
+
+.statValue {
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding-right: 0.8rem;
+  white-space: nowrap;
+  color: var(--deep);
+  background: transparent;
+  z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .heroContent {
+    padding: 1rem;
+  }
+  .heroTitle {
+    font-size: 2rem;
+  }
+  .statsSection {
+    padding: 3rem 1.2rem;
+  }
+  .sliderBtnPrev, .sliderBtnNext {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+  .statTitle {
+    font-size: 1.2rem;
+  }
+  .statLabel {
+    font-size: 0.8rem;
+  }
+  .statValue {
+    font-size: 0.75rem;
+  }
+  .barContainer {
+    height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sliderContainer {
+    gap: 0.5rem;
+  }
+  .sliderBtnPrev, .sliderBtnNext {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+  .statCard {
+    padding: 1rem;
+  }
+  .statTitle {
+    font-size: 1rem;
+  }
+}
