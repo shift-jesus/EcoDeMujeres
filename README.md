@@ -14,7 +14,7 @@ markdown
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 
 ---
-```
+
 ## 📖 ¿Qué es Eco de Mujeres?
 
 **Eco de Mujeres** es una plataforma digital que documenta y difunde las historias de mujeres líderes comunitarias en Cartagena de Indias. A través de perfiles individuales, testimonios en audio, transcripciones y documentos de consentimiento informado, buscamos preservar la memoria y dar visibilidad a mujeres que transforman sus barrios desde adentro.
@@ -27,7 +27,7 @@ El proyecto incluye:
 * **Sistema de seudónimos** para proteger la identidad de las entrevistadas
 
 ---
-```
+
 ## ✨ Novedades (v1.1)
 
 | Característica | Descripción |
@@ -40,7 +40,7 @@ El proyecto incluye:
 ---
 
 ## 🗂️ Módulos
-```
+
 ### Catálogo de mujeres
 
 | Sección | Descripción |
@@ -55,7 +55,6 @@ Cada perfil incluye:
 * Transcripción con formato diálogo (presentadora ↔ respuesta)
 * Documento de consentimiento informado (PDF)
 * (Opcional) indicador de seudónimo
-```
 ### 🤖 Chatbot interactivo
 
 | Función | Descripción |
@@ -65,7 +64,7 @@ Cada perfil incluye:
 | **Redirección a líderes** | Al hacer clic en "¿Quiénes son las mujeres líderes?" → redirige a `/mujeres` |
 | **Copia de correo** | Botón para copiar el correo de contacto al portapapeles |
 | **Modo oscuro/claro** | Se adapta al tema del sistema |
-```
+
 ### 📊 Dashboard de KPIs
 
 La página de inicio incluye indicadores clave extraídos de los testimonios:
@@ -90,7 +89,7 @@ La página de inicio incluye indicadores clave extraídos de los testimonios:
 * Modal con formulario completo, incluyendo:
   * `Pseudonimo` (checkbox)
   * `Nombre real (opcional)`
-```
+
 ### Página de audios
 
 * Lista de todas las mujeres con testimonio de audio
@@ -103,10 +102,11 @@ La página de inicio incluye indicadores clave extraídos de los testimonios:
 * Sección integrada en el footer global
 * Recursos para mujeres y familias en Cartagena: salud mental, apoyo social, asesoría legal
 * Líneas de ayuda inmediata (123, 155, Defensoría del Pueblo)
-```
+
 ---
 
 ## 🛠️ Stack tecnológico
+
 
 **Frontend**
 * React 18 + React Router DOM — navegación SPA
@@ -115,6 +115,7 @@ La página de inicio incluye indicadores clave extraídos de los testimonios:
 * HTML5 Audio — reproductor nativo con manejo de errores y control de reproducción única
 * Lucide React — iconos
 
+
 **Backend**
 * Node.js + Express
 * SQLite3 — base de datos local
@@ -122,8 +123,8 @@ La página de inicio incluye indicadores clave extraídos de los testimonios:
 * JSON Web Token (JWT) — autenticación
 * bcrypt — hashing de contraseñas
 * CORS — habilitado para el frontend
-```
----
+
+
 
 ## 📁 Estructura del proyecto
 
@@ -261,6 +262,3 @@ MIT © 2026 Eco de Mujeres — Proyecto de Estudiantes de Ingeniería · Univers
 * **Correo electrónico:** jcampoy21@campusuninunez.edu.co
 * **GitHub:** [shift-jesus/EcoDeMujeres](https://www.google.com/search?q=https://github.com/shift-jesus/EcoDeMujeres)
 
-```
-
-```
