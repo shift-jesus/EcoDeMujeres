@@ -79,7 +79,7 @@ La página de inicio incluye indicadores clave extraídos de los testimonios:
 | Trabajan en oficios informales | 75% |
 | Creen que la educación influye mucho | 90% |
 | Abandonaron estudios por hijos | 50% |
-```
+
 ### Panel de administración
 
 * Login seguro con **JWT** y cuentas predefinidas
@@ -96,14 +96,13 @@ La página de inicio incluye indicadores clave extraídos de los testimonios:
 * **Reproducción única**: al iniciar un audio se detiene automáticamente cualquier otro
 * Transcripciones desplegables (mostrar más / menos) con formato de diálogo
 * Badge 🌟 de distinción para líderes comunitarias
-```
+``
 ### Rutas de Apoyo
 
 * Sección integrada en el footer global
 * Recursos para mujeres y familias en Cartagena: salud mental, apoyo social, asesoría legal
 * Líneas de ayuda inmediata (123, 155, Defensoría del Pueblo)
-
----
+``
 
 ## 🛠️ Stack tecnológico
 
@@ -115,7 +114,6 @@ La página de inicio incluye indicadores clave extraídos de los testimonios:
 * HTML5 Audio — reproductor nativo con manejo de errores y control de reproducción única
 * Lucide React — iconos
 
-
 **Backend**
 * Node.js + Express
 * SQLite3 — base de datos local
@@ -125,9 +123,9 @@ La página de inicio incluye indicadores clave extraídos de los testimonios:
 * CORS — habilitado para el frontend
 
 
-
+`
 ## 📁 Estructura del proyecto
-
+```
 ```text
 Eco de Mujeres.Offi/
 ├── frontend/
