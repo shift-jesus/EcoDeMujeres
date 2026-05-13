@@ -1,7 +1,7 @@
 
 
 ```
-markdown
+
 ```
 # 🌸 Eco de Mujeres
 
@@ -126,7 +126,6 @@ La página de inicio incluye indicadores clave extraídos de los testimonios:
 `
 ## 📁 Estructura del proyecto
 ```
-```text
 Eco de Mujeres.Offi/
 ├── frontend/
 │ ├── public/
